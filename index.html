@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoltFix — Electric Scooter Repair Workshop</title>
+  <meta name="description" content="Electric scooter repair in 30 minutes with a warranty. Fixed prices, courier pickup.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme" class="toggle" aria-label="Dark theme">
+
+  <header>
+    <a class="brand" href="#top"><img src="images/logo.svg" alt="">Volt<strong>Fix</strong></a>
+    <input type="checkbox" id="menu" class="toggle" aria-label="Open menu">
+    <label class="burger" for="menu"><span class="sr">Menu</span></label>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#prices">Breakdowns</a></li>
+        <li><a href="#calc">Prices</a></li>
+        <li><a href="#warranty">Warranty</a></li>
+      </ul>
+    </nav>
+    <address><a href="tel:+77270000000">+7 (727) 000-00-00</a><br>help@voltfix.example</address>
+    <a class="btn btn-accent" href="tel:+77270000000">Urgent Master Call</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <article>
+        <h1>We Will Fix Your Electric Scooter in 30 Minutes with a Warranty</h1>
+        <p>We pick up your scooter, repair it at a fixed price and bring it back.</p>
+        <ul class="checks">
+          <li>Fixed price named before we start</li>
+          <li>Courier pickup and return</li>
+          <li>Up to 6 months warranty</li>
+        </ul>
+        <a class="btn btn-accent btn-big" href="#calc">Call a Courier</a>
+      </article>
+      <img src="images/hero.svg" alt="Electric scooter on a repair bench">
+    </section>
+
+    <section id="prices" class="block">
+      <h2>Typical breakdowns, fixed price and deadline</h2>
+      <ul class="grid">
+        <li><article>
+          <img src="images/icon-battery.svg" alt="" loading="lazy">
+          <h3>Battery replacement</h3>
+          <p>Cell test, new battery pack, charge calibration.</p>
+          <footer><strong>from 28 000 ₸</strong><span>ready in 60 min</span></footer>
+        </article></li>
+        <li><article>
+          <img src="images/icon-diagnostics.svg" alt="" loading="lazy">
+          <h3>Battery diagnostics</h3>
+          <p>Voltage, balance and BMS check with a written report.</p>
+          <footer><strong>3 000 ₸</strong><span>ready in 15 min</span></footer>
+        </article></li>
+        <li><article>
+          <img src="images/icon-controller.svg" alt="" loading="lazy">
+          <h3>Controller repair</h3>
+          <p>Repair or replace the controller, fix start-up errors.</p>
+          <footer><strong>from 12 000 ₸</strong><span>ready in 45 min</span></footer>
+        </article></li>
+        <li><article>
+          <img src="images/icon-brake.svg" alt="" loading="lazy">
+          <h3>Braking system</h3>
+          <p>Pads, discs, cables and hydraulic bleeding.</p>
+          <footer><strong>from 4 500 ₸</strong><span>ready in 30 min</span></footer>
+        </article></li>
+        <li><article>
+          <img src="images/icon-tire.svg" alt="" loading="lazy">
+          <h3>Tire and tube</h3>
+          <p>Puncture repair or a new tire, fitted and balanced.</p>
+          <footer><strong>from 3 500 ₸</strong><span>ready in 30 min</span></footer>
+        </article></li>
+        <li><article>
+          <img src="images/icon-motor.svg" alt="" loading="lazy">
+          <h3>Motor wheel</h3>
+          <p>Bearings, hall sensors and cable repair.</p>
+          <footer><strong>from 15 000 ₸</strong><span>ready in 90 min</span></footer>
+        </article></li>
+      </ul>
+    </section>
+
+    <section id="warranty" class="band">
+      <h2>Warranty on every repair</h2>
+      <ul class="grid">
+        <li><article><h3>6 months</h3><p>on batteries and controllers.</p></article></li>
+        <li><article><h3>3 months</h3><p>on brakes, motor wheels and tires.</p></article></li>
+        <li><article><h3>Free recheck</h3><p>If the same fault returns, we fix it again at no cost.</p></article></li>
+      </ul>
+    </section>
+
+    <section id="calc" class="block split">
+      <article>
+        <h2>Get your price and call a courier</h2>
+        <ol>
+          <li>Tell us the model and what is wrong.</li>
+          <li>We call you back with the fixed price.</li>
+          <li>The courier picks up the scooter and returns it repaired.</li>
+        </ol>
+      </article>
+      <form action="#" method="post">
+        <label for="model">Scooter Make/Model</label>
+        <input id="model" name="model" type="text" required minlength="2" placeholder="e.g. Xiaomi Mi 3">
+
+        <label for="defect">Defect Description</label>
+        <textarea id="defect" name="defect" required minlength="5" rows="4" placeholder="e.g. does not turn on after charging"></textarea>
+
+        <label for="phone">Owner's Phone</label>
+        <input id="phone" name="phone" type="tel" required pattern="\+?[0-9\s\-()]{10,18}" placeholder="+7 777 000 00 00">
+
+        <label for="email">Email (optional)</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+
+        <button class="btn btn-accent btn-big" type="submit">Get price and call a courier</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Workshop</h2>
+      <address>
+        Almaty, Abay Ave. 1<br>
+        43.2389° N, 76.8897° E<br>
+        <a href="tel:+77270000000">+7 (727) 000-00-00</a>
+      </address>
+      <p>Mon–Sat 09:00–20:00<br>Sun 10:00–17:00</p>
+    </section>
+    <nav aria-label="Footer">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#prices">Breakdowns</a></li>
+        <li><a href="#calc">Prices</a></li>
+        <li><a href="#warranty">Warranty</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Legal</h2>
+      <p>© 2026 VoltFix LLP. Warranty terms are stated in the repair agreement.</p>
+      <label class="switch" for="theme">Light / Dark theme</label>
+    </section>
+  </footer>
+</body>
+</html>
